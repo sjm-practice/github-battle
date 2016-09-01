@@ -1,2 +1,2 @@
 # github-battle
-A practice application for learning react
+A practice application to learn react.
