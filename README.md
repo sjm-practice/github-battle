@@ -35,5 +35,5 @@ A practice application to learn react.
 * Index Route (IndexRoute) allows you to set a component to be rendered for the index / root route
     * using IndexLink instead of Link for the link to the route, prevents the index link from being active all of the time (note, normally parent routes are active when child routes are active)
     * an alternative is to use the onlyActiveOnIndex property with Link
-* Programatical Navigation - (get access to router via contextType, then push desired path)[https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating]
+* Programatical Navigation - [get access to router via contextType, then push desired path](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating)
     
