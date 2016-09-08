@@ -21,6 +21,7 @@ A practice application to learn react.
     * seems analogous to innerHTML
     * ie. `<Clock>12:49am</Clock>`  is the "12:49am"
     * if there are multiple components children will be an array
+
 ### React Router
 * React Router, is (or is like) a component
     * [tutorial](https://github.com/reactjs/react-router-tutorial/tree/master/lessons)
