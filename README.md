@@ -53,3 +53,18 @@ A practice application to learn react.
     * componentWillReceiveProps (anytime component receives new props)
     * componentWillUnmount (when navigating away from component)
     
+### This
+* __Implicit binding__ (this is, what is left of the dot at call time)
+* __Explicit binding__ (you pass in this, using __.call__ - myfunc.call(this_context))
+    * __.call__ and __.apply__ invoke the function, where the context of this is passed in 
+    * note, the first argument of call is 'this / context', any subsequent arguments simply become parameters
+        * `myfunc.call(this_context, arg1, arg2, arg3);
+    * note, apply is the same as call, but you can pass all the arguments in an array
+        * `myfunc.apply(this_context, array_of_args);
+    * __.bind__ takes the same args as .call, but instead of invoking the function, returns a new function with the passed in context and arguments set
+        * `var newFn = myFunc.bind(this_context, arg1, arg2);
+* __new binding__ (used in constructors to create / set member properties)
+* __window binding__ (if now this context is set for an object or function, defaults to window)
+    * `window.age = 35;
+    * use of an this that did not have its context set, would resort to window's this
+    * note, 'use strict'; prevents this case (window binding)
