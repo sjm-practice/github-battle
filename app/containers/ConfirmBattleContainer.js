@@ -27,6 +27,15 @@ var ConfirmBattleContainer = React.createClass({
         });
       }.bind(this)); // pass in the 'this' context so setState is preserved
   },
+  
+  handleInitiateBattle: function () {
+    this.context.router.push({
+      pathname: "/results",
+      state: {
+        playersInfo: this.state.playersInfo
+      }
+    });
+  },
 
   render: function () {
     return (
