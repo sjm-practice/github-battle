@@ -38,3 +38,11 @@ A practice application to learn react.
     * an alternative is to use the onlyActiveOnIndex property with Link
 * Programatical Navigation - [get access to router via contextType, then push desired path](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating)
     
+### React Life Cycle Events
+* two primary categories of events, Mount/Unmount & Receive New Data
+* Mount / Unmount Examples
+    * establish default props in our component
+    * set some initial state
+    * make an ajax request to fetch some data
+    * set up any listeners
+    * remove any listeners, for unmount
