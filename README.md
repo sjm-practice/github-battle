@@ -46,3 +46,10 @@ A practice application to learn react.
     * make an ajax request to fetch some data
     * set up any listeners
     * remove any listeners, for unmount
+* Common Life Cycle Events
+    * getInitialState
+    * componentWillMount  (runs before render)
+    * componentDidMount   (runs after render)
+    * componentWillReceiveProps (anytime component receives new props)
+    * componentWillUnmount (when navigating away from component)
+    
