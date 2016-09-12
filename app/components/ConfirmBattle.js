@@ -7,10 +7,6 @@ var styles = require("../styles");
 var UserDetails = require("./UserDetails");
 var UserDetailsWrapper = require("./UserDetailsWrapper");
 
-function puke(obj) {
-  return <pre>{JSON.stringify(obj, null, ' ')}</pre>;
-}
-
 function ConfirmBattle(props) {
   return props.isLoading === true
     ? <p>LOADING!</p>
