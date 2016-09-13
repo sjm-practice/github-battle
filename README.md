@@ -68,3 +68,15 @@ A practice application to learn react.
     * `window.age = 35;
     * use of an this that did not have its context set, would resort to window's this
     * note, 'use strict'; prevents this case (window binding)
+  
+### Reusable Components
+* getDefaultProps - specify default props for a component
+    
+## Live Templates to Update / Create
+* jsx - self closing element   <Component /> (emmet sometimes creates opening and closing tags)
+    * create one shortcut for self closing, one for both tags
+* learn how to control attribute value delimeters, between ""  and {}
+* sst (this.setState)
+    * needs a space after :
+    * TBD, remove last return (blank line) -it adds a blank line before next line of code (not usually needed)
+* pt (individual propType), add another var param / move $END$ to end of line (after comma), so hitting enter last time brings you to end of line (easier to add more lines that way)
