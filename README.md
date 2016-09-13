@@ -1,5 +1,5 @@
 # Github-battle
-A practice application to learn react.
+A practice application to learn react (done as a code along for Tyler McGinnis' [ReactJS Program](http://www.reactjsprogram.com/), React Fundamentals).
 
 
 ## Notes
