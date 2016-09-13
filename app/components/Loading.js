@@ -33,7 +33,7 @@ var Loading = React.createClass({
     };
   },
 
-  getInitialState() {
+  getInitialState: function () {
     this.originalText = this.props.text;
     return {
       text: this.originalText

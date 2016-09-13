@@ -22,7 +22,7 @@ var ConfirmBattleContainer = React.createClass({
     githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
       .then(function (players) {
         this.setState({
-          isLoading: true,
+          isLoading: false,
           playersInfo: [players[0], players[1]]
         });
       }.bind(this)); // pass in the 'this' context so setState is preserved

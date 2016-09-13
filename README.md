@@ -76,6 +76,7 @@ A practice application to learn react.
 * jsx - self closing element   <Component /> (emmet sometimes creates opening and closing tags)
     * create one shortcut for self closing, one for both tags
 * learn how to control attribute value delimeters, between ""  and {}
+    * props arguments seem to be able to accept either. but when?
 * sst (this.setState)
     * needs a space after :
     * TBD, remove last return (blank line) -it adds a blank line before next line of code (not usually needed)
