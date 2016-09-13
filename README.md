@@ -1,5 +1,5 @@
 # Github-battle
-A practice application to learn react.
+A practice application to learn react (done as a code along for Tyler McGinnis' [ReactJS Program](http://www.reactjsprogram.com/), React Fundamentals).
 
 
 ## Notes
@@ -58,19 +58,21 @@ A practice application to learn react.
 * __Explicit binding__ (you pass in this, using __.call__ - myfunc.call(this_context))
     * __.call__ and __.apply__ invoke the function, where the context of this is passed in 
     * note, the first argument of call is 'this / context', any subsequent arguments simply become parameters
-        * `myfunc.call(this_context, arg1, arg2, arg3);
+        * `myfunc.call(this_context, arg1, arg2, arg3);`
     * note, apply is the same as call, but you can pass all the arguments in an array
         * `myfunc.apply(this_context, array_of_args);
     * __.bind__ takes the same args as .call, but instead of invoking the function, returns a new function with the passed in context and arguments set
-        * `var newFn = myFunc.bind(this_context, arg1, arg2);
+        * `var newFn = myFunc.bind(this_context, arg1, arg2);`
 * __new binding__ (used in constructors to create / set member properties)
 * __window binding__ (if now this context is set for an object or function, defaults to window)
-    * `window.age = 35;
+    * `window.age = 35;`
     * use of an this that did not have its context set, would resort to window's this
     * note, 'use strict'; prevents this case (window binding)
   
 ### Reusable Components
 * getDefaultProps - specify default props for a component
+* React.cloneElement - allows you to provide new / different props to an element or elements (children)
+    * `React.cloneElement(FriendList, {friends: ["Jake", "Joe"]);`
     
 ## Live Templates to Update / Create
 * jsx - self closing element   <Component /> (emmet sometimes creates opening and closing tags)
