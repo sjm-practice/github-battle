@@ -79,6 +79,12 @@ And... doing the follow up course, refactoring this project to use ES6/7.
 ### ES6/7
 * let and const are block scoped, var is function scoped
 * const prevents changing what the variable references, but does allow changing the value (is mutable)
+* arrow functions, more concise syntax AND share lexical this with the parent scope
+    * arrow functions do not create a new context, so the "this" keyword inside the arrow function will be that of its parent
+        * bind isn't needed in this case
+* also with arrow functions, if function is only one statement, return keyword and '{' and '}' can be omitted
+    * implicit return (return is implied)
+    * `myArray.map((currNum) => currNum * 2);`
 
 ## Live Templates to Update / Create
 * jsx - self closing element   <Compo

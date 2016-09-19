@@ -12,17 +12,17 @@ const ResultsContainer = React.createClass({
     };
   },
 
-  componentDidMount: function () {
+  componentDidMount() {
     battle(this.props.location.state.playersInfo)
-      .then(function (scores) {
+      .then((scores) => {
         this.setState({
           scores: scores,
           isLoading: false
         });
-      }.bind(this));
+      });
   },
 
-  render: function () {
+  render() {
     return (
       <Results
         isLoading={this.state.isLoading}
