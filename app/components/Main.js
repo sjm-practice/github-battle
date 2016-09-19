@@ -6,7 +6,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import "../main.css"; // webpack (with style-loader & css-loader) allow you to directly require css
 
 const Main = React.createClass({
-  render: function () {
+  render() {
     return (
       <div className="main-container">
         <ReactCSSTransitionGroup
