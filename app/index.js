@@ -1,11 +1,11 @@
-var React = require("react");
-var ReactDOM = require("react-dom");
-var routes = require("./config/routes");
-var Raven = require("raven-js");
+import React from "react";
+import ReactDOM from "react-dom";
+import routes from "./config/routes";
+import Raven from "raven-js";
 
-var sentryKey = "eea94840f0ae401b80a6baa48ca6a418";
-var sentryApp = "97496";
-var sentryURL = "https://" + sentryKey + "@sentry.io/" + sentryApp;
+const sentryKey = "eea94840f0ae401b80a6baa48ca6a418";
+const sentryApp = "97496";
+const sentryURL = "https://" + sentryKey + "@sentry.io/" + sentryApp;
 
 Raven.config(sentryURL).install();
 
