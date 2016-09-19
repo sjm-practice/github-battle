@@ -1,6 +1,8 @@
 # Github-battle
 A practice application to learn react (done as a code along for Tyler McGinnis' [ReactJS Program](http://www.reactjsprogram.com/), React Fundamentals).
 
+And... doing the follow up course, refactoring this project to use ES6/7.
+
 
 ## Notes
 ### Components & Render
@@ -73,9 +75,14 @@ A practice application to learn react (done as a code along for Tyler McGinnis' 
 * getDefaultProps - specify default props for a component
 * React.cloneElement - allows you to provide new / different props to an element or elements (children)
     * `React.cloneElement(FriendList, {friends: ["Jake", "Joe"]);`
-    
+  
+### ES6/7
+* let and const are block scoped, var is function scoped
+* const prevents changing what the variable references, but does allow changing the value (is mutable)
+
 ## Live Templates to Update / Create
-* jsx - self closing element   <Component /> (emmet sometimes creates opening and closing tags)
+* jsx - self closing element   <Compo
+nent /> (emmet sometimes creates opening and closing tags)
     * create one shortcut for self closing, one for both tags
 * learn how to control attribute value delimeters, between ""  and {}
     * props arguments seem to be able to accept either. but when?
@@ -83,3 +90,5 @@ A practice application to learn react (done as a code along for Tyler McGinnis' 
     * needs a space after :
     * TBD, remove last return (blank line) -it adds a blank line before next line of code (not usually needed)
 * pt (individual propType), add another var param / move $END$ to end of line (after comma), so hitting enter last time brings you to end of line (easier to add more lines that way)
+* use strict, change single quotes to double quotes in rcc (and other templates)
+* 
