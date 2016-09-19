@@ -1,7 +1,6 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
+import React, { PropType } from "react";
 
 function UserDetailsWrapper(props) {
   return (
@@ -12,4 +11,4 @@ function UserDetailsWrapper(props) {
   );
 }
 
-module.exports = UserDetailsWrapper;
+export default UserDetailsWrapper;
