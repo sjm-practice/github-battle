@@ -85,6 +85,17 @@ And... doing the follow up course, refactoring this project to use ES6/7.
 * also with arrow functions, if function is only one statement, return keyword and '{' and '}' can be omitted
     * implicit return (return is implied)
     * `myArray.map((currNum) => currNum * 2);`
+* async / await
+    * every async function you write will return a promise
+    * every thing you await will ordinarily be a promise
+    * to use await, make sure the function you are in is an async function
+    * try / catch
+        * `try {`
+        * `  var user = await getUser();`
+        * `  console.log(user);`
+        * `} catch(err) {`
+        * `  console.log("error:", err);`
+        * `}`
 
 ## Live Templates to Update / Create
 * jsx - self closing element   <Compo
