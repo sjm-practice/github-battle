@@ -1,16 +1,18 @@
 'use strict';
 
-import React from "react";
+import React, { Component } from "react";
 import Results from "../components/Results";
 import { battle } from "../utils/githubHelpers";
 
-const ResultsContainer = React.createClass({
-  getInitialState() {
-    return {
+class ResultsContainer extends Component {
+  constructor() {
+    super();
+
+    this.state = {
       isLoading: true,
       scores: []
     };
-  },
+  }
 
   async componentDidMount() {
     try {
@@ -22,7 +24,7 @@ const ResultsContainer = React.createClass({
     } catch (err) {
       console.warn("Error in ResultsContainer:", err);
     }
-  },
+  }
 
   render() {
     return (
@@ -32,6 +34,6 @@ const ResultsContainer = React.createClass({
         scores={this.state.scores} />
     );
   }
-});
+}
 
 export default ResultsContainer;

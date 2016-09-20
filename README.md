@@ -96,6 +96,12 @@ And... doing the follow up course, refactoring this project to use ES6/7.
         * `} catch(err) {`
         * `  console.log("error:", err);`
         * `}`
+* class
+    * one tricky thing to remember when creating a class, __if passing a function that contains this, down to another function (ie via props)__, the `this` is not automatically bound to that function being passed (like it was if using React.createClass) and the context will change
+    * so, pass using an arrow function to have `this` bound to that function
+    * `<ConfirmBattle onInitiateBattle={() => this.handleInitiateBattle()} />`
+    * be aware, __IF the passed function takes argument__, it must be passed via the arrow function
+    * `<ConfirmBattle onInitiateBattle={(event) => this.handleInitiateBattle(event)} />`
 
 ## Live Templates to Update / Create
 * jsx - self closing element   <Compo
