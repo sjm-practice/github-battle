@@ -102,16 +102,3 @@ And... doing the follow up course, refactoring this project to use ES6/7.
     * `<ConfirmBattle onInitiateBattle={() => this.handleInitiateBattle()} />`
     * be aware, __IF the passed function takes argument__, it must be passed via the arrow function
     * `<ConfirmBattle onInitiateBattle={(event) => this.handleInitiateBattle(event)} />`
-
-## Live Templates to Update / Create
-* jsx - self closing element   <Compo
-nent /> (emmet sometimes creates opening and closing tags)
-    * create one shortcut for self closing, one for both tags
-* learn how to control attribute value delimeters, between ""  and {}
-    * props arguments seem to be able to accept either. but when?
-* sst (this.setState)
-    * needs a space after :
-    * TBD, remove last return (blank line) -it adds a blank line before next line of code (not usually needed)
-* pt (individual propType), add another var param / move $END$ to end of line (after comma), so hitting enter last time brings you to end of line (easier to add more lines that way)
-* use strict, change single quotes to double quotes in rcc (and other templates)
-* 
